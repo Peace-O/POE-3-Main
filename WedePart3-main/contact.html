@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Kanaverse Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <p class="site-brand"><a href="index.html" aria-label="Kanaverse Club home">Kanaverse Club</a></p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="header-cta"><a href="enquiry.html">Apply for membership</a></p>
+  </header>
+
+  <main>
+
+    <section id="page-intro">
+      <h1>We're happy to answer questions</h1>
+      <p>Whether you're curious about membership, events, or how the club operates legally — reach out. General enquiries only; membership applications go through our dedicated form.</p>
+    </section>
+
+    <!-- Two locations, each with an embedded map -->
+    <section id="locations">
+      <div>
+        <img src="images/bud4.avif" alt="Rosebank Clubhouse" class="location-image">
+        <h2>Rosebank Clubhouse</h2>
+        <iframe title="Map to Rosebank clubhouse" width="100%" height="250" frameborder="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Rosebank,Johannesburg&output=embed"></iframe>
+        <p>The Zone, Oxford Road, Rosebank, Johannesburg</p>
+        <p>Tue–Sat, 12:00–20:00 (members only)</p>
+      </div>
+      <div>
+        <img src="images/buds5.avif" alt="Braamfontein Annex" class="location-image">
+        <h2>Braamfontein Annex</h2>
+        <iframe title="Map to Braamfontein annex" width="100%" height="250" frameborder="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Braamfontein,Johannesburg&output=embed"></iframe>
+        <p>De Korte Street, Braamfontein, Johannesburg</p>
+        <p>Thu–Sat, 14:00–21:00 (events &amp; workshops)</p>
+      </div>
+    </section>
+
+    <!-- General contact form -->
+    <section id="contact-form">
+      <h2>Send us a message</h2>
+      <form id="contact-message-form" action="mailto:info@canaverseclub.co.za" method="post" enctype="text/plain" novalidate>
+
+        <p>
+          <label for="c-name">Name</label><br>
+          <input type="text" id="c-name" name="name" minlength="2" maxlength="60" autocomplete="given-name" required aria-describedby="c-name-error">
+          <span class="form-error" id="c-name-error" aria-live="polite"></span>
+        </p>
+
+        <p>
+          <label for="c-surname">Surname</label><br>
+          <input type="text" id="c-surname" name="surname" minlength="2" maxlength="60" autocomplete="family-name" required aria-describedby="c-surname-error">
+          <span class="form-error" id="c-surname-error" aria-live="polite"></span>
+        </p>
+
+        <p>
+          <label for="c-email">Email</label><br>
+          <input type="email" id="c-email" name="email" maxlength="254" autocomplete="email" required aria-describedby="c-email-error">
+          <span class="form-error" id="c-email-error" aria-live="polite"></span>
+        </p>
+
+        <p>
+          <label for="c-phone">South African phone number</label><br>
+          <input type="tel" id="c-phone" name="phone" minlength="10" maxlength="10" pattern="0[0-9]{9}" autocomplete="tel" inputmode="numeric" title="Enter 10 digits starting with 0, for example 0821234567." required aria-describedby="c-phone-error">
+          <span class="form-error" id="c-phone-error" aria-live="polite"></span>
+        </p>
+
+        <p>
+          <label for="c-subject">Type of message</label><br>
+          <select id="c-subject" name="messageType" required aria-describedby="c-subject-error">
+            <option value="">Select a message type</option>
+            <option value="general">General question</option>
+            <option value="feedback">Feedback</option>
+            <option value="complaint">Complaint</option>
+            <option value="membership">Membership question</option>
+            <option value="events">Events and workshops</option>
+            <option value="press">Press / media</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="form-error" id="c-subject-error" aria-live="polite"></span>
+        </p>
+
+        <p>
+          <label for="c-message">Full message</label><br>
+          <textarea id="c-message" name="message" rows="5" minlength="10" maxlength="2000" required aria-describedby="c-message-error"></textarea>
+          <span class="form-error" id="c-message-error" aria-live="polite"></span>
+        </p>
+
+        <p>
+          <button type="submit">Prepare email</button>
+        </p>
+
+        <div id="contact-form-status" class="form-status" aria-live="polite"></div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><strong>Kanaverse Club</strong></p>
+    <p>Kanaverse Club is a private, members-only social club operating under South African legislation permitting private cannabis cultivation, possession and use. Membership is restricted to verified adults aged 21 and older. No products are sold or distributed to non-members, and nothing on this site constitutes a retail offer to the public.</p>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Apply for Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <p>Rosebank, Johannesburg &middot; info@canaverseclub.co.za</p>
+    <p><a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+    <p>&copy; 2026 Kanaverse Club. All rights reserved. 21+ private members' club — Gauteng, South Africa.</p>
+  </footer>
+
+  <script src="js/forms.js"></script>
+</body>
+</html>

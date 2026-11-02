@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership &amp; Club Enquiry — Kanaverse Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <p class="site-brand"><a href="index.html" aria-label="Kanaverse Club home">Kanaverse Club</a></p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="header-cta"><a href="enquiry.html">Apply for membership</a></p>
+  </header>
+
+  <main>
+
+    <section id="page-intro">
+      <h1>Membership &amp; Club Enquiry</h1>
+      <p>Ask us about membership, clubhouse visits, or events and workshops. Membership applications are reviewed within 3–5 working days; event and visit availability is confirmed by our team.</p>
+    </section>
+
+    <section id="application-form">
+      <h2>Send an enquiry</h2>
+      <p>Kanaverse Club is a private members' club, not a retail store. This form does not place product orders.</p>
+      <form id="enquiry-form" action="mailto:info@canaverseclub.co.za" method="post" enctype="text/plain" novalidate>
+
+        <p>
+          <label for="e-name">Full name</label><br>
+          <input type="text" id="e-name" name="fullName" minlength="2" maxlength="80" autocomplete="name" required aria-describedby="e-name-error">
+          <span class="form-error" id="e-name-error" aria-live="polite"></span>
+        </p>
+
+        <p>
+          <label for="e-email">Email</label><br>
+          <input type="email" id="e-email" name="email" maxlength="254" autocomplete="email" required aria-describedby="e-email-error">
+          <span class="form-error" id="e-email-error" aria-live="polite"></span>
+        </p>
+
+        <p>
+          <label for="e-phone">South African phone number</label><br>
+          <input type="tel" id="e-phone" name="phone" minlength="10" maxlength="10" pattern="0[0-9]{9}" autocomplete="tel" inputmode="numeric" title="Enter 10 digits starting with 0, for example 0821234567." required aria-describedby="e-phone-error">
+          <span class="form-error" id="e-phone-error" aria-live="polite"></span>
+        </p>
+
+        <p>
+          <label for="e-interest">What are you enquiring about?</label><br>
+          <select id="e-interest" name="interest" required aria-describedby="e-interest-error">
+            <option value="">Select an option</option>
+            <option value="membership">Membership application</option>
+            <option value="visit">A clubhouse visit</option>
+            <option value="events">Events and workshops</option>
+            <option value="information">Membership information</option>
+          </select>
+          <span class="form-error" id="e-interest-error" aria-live="polite"></span>
+        </p>
+
+        <p>
+          <label for="e-visit-date">Preferred visit or event date (optional)</label><br>
+          <input type="date" id="e-visit-date" name="preferredDate" aria-describedby="e-visit-date-error">
+          <span class="form-error" id="e-visit-date-error" aria-live="polite"></span>
+        </p>
+
+        <p>
+          <label for="e-dob">Date of birth (membership enquiries)</label><br>
+          <input type="date" id="e-dob" name="dateOfBirth" required aria-describedby="e-dob-error">
+          <span class="form-error" id="e-dob-error" aria-live="polite"></span>
+        </p>
+
+        <p>
+          <input type="checkbox" id="e-confirm" name="ageConfirmed" required aria-describedby="e-confirm-error">
+          <label for="e-confirm">I confirm that I am 21 years of age or older.</label><br>
+          <span class="form-error" id="e-confirm-error" aria-live="polite"></span>
+        </p>
+
+        <p>
+          <label for="e-message">Message</label><br>
+          <textarea id="e-message" name="message" rows="5" minlength="10" maxlength="1000" required aria-describedby="e-message-error"></textarea>
+          <span class="form-error" id="e-message-error" aria-live="polite"></span>
+        </p>
+
+        <p>
+          <button type="submit">Check enquiry details</button>
+        </p>
+
+        <div id="enquiry-result" class="form-result" aria-live="polite" hidden></div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><strong>Kanaverse Club</strong></p>
+    <p>Kanaverse Club is a private, members-only social club operating under South African legislation permitting private cannabis cultivation, possession and use. Membership is restricted to verified adults aged 21 and older. No products are sold or distributed to non-members, and nothing on this site constitutes a retail offer to the public.</p>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Apply for Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <p>Rosebank, Johannesburg &middot; info@canaverseclub.co.za</p>
+    <p><a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+    <p>&copy; 2026 Kanaverse Club. All rights reserved. 21+ private members' club — Gauteng, South Africa.</p>
+  </footer>
+
+  <script src="js/forms.js"></script>
+</body>
+</html>
